@@ -11,14 +11,14 @@ const verifyAdmin = require("../middleware/verifyAdmin")
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "asaanqarz9@gmail.com",
-      pass: "blialrjysmnnyfkv", 
+      user: "akhuwat.foundation.live@gmail.com",
+      pass: "vzakwfatdwitoioj", 
     },
   });
 
   try {
     await transporter.sendMail({
-      from: "asaanqarz9@gmail.com",
+      from: "akhuwat.foundation.live@gmail.com",
       to,
       subject,
       html: text,

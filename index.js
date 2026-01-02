@@ -17,6 +17,7 @@ const { router: homeRouter, ensureHomeDocument } = require("./routes/home");
 app.use("/api/home", homeRouter);
 const { router: contentRouter } = require("./routes/content");
 app.use("/api/content", contentRouter);
+app.use("/api/posts", require("./routes/posts"))
 
 app.get('/', (req, res) => {
   res.send('Hello, Backend running!');
